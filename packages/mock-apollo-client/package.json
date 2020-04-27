@@ -1,0 +1,48 @@
+{
+  "name": "mock-apollo-client",
+  "version": "0.3.0",
+  "description": "Library to help unit testing when using apollo-client",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "deploy": "npm run test && npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mike-gibson/mock-apollo-client.git"
+  },
+  "keywords": [
+    "apollo-client",
+    "graphql",
+    "mock",
+    "test",
+    "testing"
+  ],
+  "author": "mike-gibson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mike-gibson/mock-apollo-client/issues"
+  },
+  "homepage": "https://github.com/mike-gibson/mock-apollo-client#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/graphql": "^14.2.3",
+    "@types/jest": "^25.1.4",
+    "apollo-cache-inmemory": "^1.6.2",
+    "apollo-client": "^2.6.3",
+    "graphql": "^14.4.2",
+    "graphql-tag": "^2.10.1",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3"
+  },
+  "peerDependencies": {
+    "apollo-client": "~2.5.0 || ~2.6.0"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}
